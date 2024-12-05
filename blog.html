@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="header-panel">
+        <div class="header-logo">
+            <div class="logo">
+
+            </div>
+        </div>
+
+
+        <div class="header-option">
+            <ul>
+                <a href="index.html">HOME </a>
+                <a href="about.html">ABOUT US</a>
+                <a href="index2.html" class="optional">VENUES</a>
+                
+                <a href="index1.html">RESTRAUNT</a>
+
+                <a href="contact.html">CONTACT US</a>
+                <a href="blog.html" class="optional">BLOG</a>
+
+            </ul>
+        </div>
+
+        <div class="header-search">
+            <label class="switch">
+                <input type="checkbox" id="toggle-dark-mode" onclick="toggleDarkMode()">
+                <span class="slider"></span>
+              </label>
+        </div>
+    </div>
+</header>
+  
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="blog-posts">
+      <article class="post">
+        <img src="https://cdn.prod.website-files.com/60829aab76a98d17b68f30ae/64feac24e52920921a8e7229_Wedding%20Planning%20Services%20in%20India%20with%20Shaadivaale-p-1080.png">
+        <div class="post-content">
+          <h2>Your Dream Wedding is Just a Click Away
+        </h2>
+          <p class="meta">Posted on <span>December 3, 2024</span> by <span>Suraj Gupta</span></p>
+          <p>In the vast cultural landscape of India, weddings aren't just ceremonies, they are grand festivals. And planning these grand affairs? Not always a walk in the park. But here's the good news: online wedding planning websites, like Shaadivaale, have revolutionized the way we think about wedding preparation. Let’s delve into the offerings of Shaadivaale and see why it’s the talk of the town among soon-to-be-married couples in India..</p>
+          <button class="read-more-btn" onclick="showAlert()">Read More</button>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="https://cdn.prod.website-files.com/60829aab76a98d17b68f30ae/62ea665a38dfaa12471760df_this-boho-chic-mandap-is-apt-for-an-intimate-wedding.jpg" alt="Blog Image">
+        <div class="post-content">
+          <h2>Boho Mandap Designs that You Should Bookmark Right Now!</h2>
+          <p class="meta">Posted on <span>December 5, 2024</span> by <span>Jane Doe</span></p>
+          <p>We love our larger-than-life mandap and floral arrangements however there is something so dreamlike and stunning about a boho mandap design that we always fall in love. Boho mandaps are the thing that is trending this wedding season and we are cherishing how the situation is playing out. Basic yet glitz, boho mandap decor should be possible for intimate weddings in your backyard as well as exotic ones on a gorgeous beach. The most stunning piece of this bohemian style is that it adds such a special shift focus over to your wedding decor. So we found our most loved boho mandap designs for you to get motivated by!.</p>
+          <button class="read-more-btn" onclick="showAlert()">Read More</button>
+        </div>
+      </article>
+      <article class="post">
+        <img src="https://image.wedmegood.com/resized-nw/800X400/wp-content/uploads/2021/04/Collage.jpg" alt="Blog Image">
+        <div class="post-content">
+          <h2>The most effective method to Plan a Budget for A Destination Wedding!</h2>
+          <p class="meta">Posted on <span>December 5, 2024</span> by <span>Jane Doe</span></p>
+          <p>Destination weddings in India are like an extended vacation with your loved ones. Fun, celebration and an exotic location to boot! Be that as it may, arranging the expense of a wedding at a destination location can be a tricky errand. Arranging the budgets for accommodation, vendors - caterers, travel, make-up artists, florists and all other necessary aspects add up when it comes to planning a destination wedding cost and indexing a budget..</p>
+          <button class="read-more-btn" onclick="showAlert()">Read More</button>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Comment Section -->
+    <div class="comments">
+      <h3>Leave a Comment</h3>
+      <form id="comment-form">
+        <textarea id="comment-text" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Submit Comment</button>
+      </form>
+
+      <div id="comment-section">
+        <!-- Comments will be displayed here -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-panel1">
+        <div class="footer-logo">
+            <img src="./Assests/logo_white.png" alt="">
+        </div>
+        <div class="contact-info2">
+            <div class="info2">
+                <p>Banglore | Cochin | Calicut | Kannur | Mangalore | Delhi</p>
+                <p>Please enable footer phone in Theme option </p>
+                <p>gethitched@airaweddingplanners.com</p>
+                <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i
+                        class="fa-brands fa-google-plus-g"></i><i class="fa-brands fa-youtube"></i></p>
+            </div>
+        </div>
+    </div>
+    <hr style="border-color: #232323; ">
+
+    <div class="footer-panel2">
+        <p><i class="fa-regular fa-copyright"></i> 2024 <span>Aira Wedding & Celeberations.</span> All Right
+            Reserved | Digital Partner- <span>WEBERTIZE</span> </p>
+
+    </div>
+</footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom styles */
+        .slider-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .slider-card:hover {
+            transform: scale(1.05);
+        }
+        .block-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="flex justify-between items-center">
+            <div class="text-white text-2xl font-bold">Wedding Planner</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-white hover:text-yellow-400">Home</a></li>
+                <li><a href="index1.html" class="text-white hover:text-yellow-400">Restaurant</a></li>
+                <li><a href="contact.html" class="text-white hover:text-yellow-400">Contact</a></li>
+                <li><a href="index2.html" class="text-white hover:text-yellow-400">Venues</a></li>
+                <li><a href="#blog" class="text-white hover:text-yellow-400">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="p-8 text-center">
+        <h1 class="text-4xl font-semibold mb-4">Your Dream Wedding Starts Here</h1>
+        <p class="text-xl">Let us plan your perfect wedding day with personalized services and packages.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="p-8">
+        <h2 class="text-3xl text-center font-semibold mb-6">Our Services</h2>
+        <div class="block-container">
+            <!-- Example Service Block -->
+            <div class="slider-card bg-white p-4 rounded-lg shadow-lg max-w-xs">
+                <img src="https://via.placeholder.com/300" alt="Wedding Venue" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Wedding Venues</h3>
+                <p>Beautiful venues to host your wedding celebration in style.</p>
+            </div>
+            <div class="slider-card bg-white p-4 rounded-lg shadow-lg max-w-xs">
+                <img src="https://via.placeholder.com/300" alt="Catering" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Catering Services</h3>
+                <p>Delicious and customized catering for your wedding feast.</p>
+            </div>
+            <div class="slider-card bg-white p-4 rounded-lg shadow-lg max-w-xs">
+                <img src="https://via.placeholder.com/300" alt="Photography" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Photography & Videography</h3>
+                <p>Capture every beautiful moment of your special day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section id="restaurant" class="p-8 bg-blue-50">
+        <h2 class="text-3xl text-center font-semibold mb-6">Wedding Restaurants</h2>
+        <div class="block-container">
+            <div class="bg-white p-4 rounded-lg shadow-lg max-w-xs">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 1" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Exquisite Cuisine</h3>
+                <p>Offering a wide range of food options to suit your taste.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg max-w-xs">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 2" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Elegant Dining</h3>
+                <p>Elegant dining options for your wedding reception.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-8 text-center">
+        <h2 class="text-3xl font-semibold mb-6">Contact Us</h2>
+        <p>Have any questions or want to book a consultation? Reach out to us!</p>
+        <form class="mt-4 max-w-xl mx-auto">
+            <input type="text" placeholder="Your Name" class="p-2 border rounded w-full mb-4" required>
+            <input type="email" placeholder="Your Email" class="p-2 border rounded w-full mb-4" required>
+            <textarea placeholder="Message" class="p-2 border rounded w-full mb-4" required></textarea>
+            <button type="submit" class="bg-blue-600 text-white py-2 px-6 rounded">Submit</button>
+        </form>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="p-8">
+        <h2 class="text-3xl text-center font-semibold mb-6">Wedding Blog</h2>
+        <div class="block-container">
+            <div class="bg-white p-4 rounded-lg shadow-lg max-w-xs">
+                <img src="https://via.placeholder.com/300" alt="Blog 1" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Planning Tips</h3>
+                <p>Read our expert tips on planning your perfect wedding day.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg max-w-xs">
+                <img src="https://via.placeholder.com/300" alt="Blog 2" class="rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Latest Trends</h3>
+                <p>Explore the latest wedding trends to make your day unique.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4">
+        <p>&copy; 2024 Wedding Planner. All rights reserved.</p>
+    </footer>
+
+    <!-- Slider Card JS (Optional) -->
+    <script>
+        // You can add JS here for more animations or slider functionality
+        // Example: Add hover effect or more interactivity
+    </script>
+
+</body>
+</html>

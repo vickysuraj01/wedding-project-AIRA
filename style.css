@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.header-panel {
+  width: 1005;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header-logo {
+  width: 120px;
+  height: 80px;
+}
+.logo {
+  background-image: url(./images/4.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin-left: -30px;
+}
+
+.header-option ul a {
+  font-size: 1.3rem;
+  color: #ad056f;
+  opacity: 0.7;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0px 25px 0px 0px;
+}
+.header-option ul a:hover {
+  opacity: 1;
+}
+@media (max-width: 1120px) {
+  .header-option .optional {
+    display: none;
+  }
+}
+
+/* Hero-Section */
+
+.hero-bg-img {
+  margin-top: 10px;
+  height: 650px;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-left: 63px;
+}
+@media (max-width: 1120px) {
+  .hero-img {
+    background-size: contain;
+  }
+}
+.hero-disc {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 450px;
+  width: 620px;
+  height: 100px;
+  color: rgba(43, 43, 43, 0.6);
+  font-size: 22px;
+  font-family: "Playwrite CU", cursive;
+  background-color: rgba(255, 255, 179, 0.3);
+}
+@media (max-width: 1120px) {
+  .hero-disc {
+    margin-left: 110px;
+  }
+}
+
+/* discription-section */
+.discription-panel {
+  width: 100%;
+  height: 400px;
+}
+.disc-heading {
+  color: rgba(43, 43, 43, 0.6);
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  margin-top: 40px;
+}
+@media (max-width: 1120px) {
+  .disc-heading {
+    font-size: 30px;
+  }
+}
+.disc-para {
+  color: rgba(43, 43, 43, 0.6);
+  font-size: 18px;
+
+  font-family: "Caveat", cursive;
+  text-align: center;
+  padding: 0px 40px 0 40px;
+  margin-top: 10px;
+}
+.disc-contact {
+  margin-top: 10px;
+  text-align: right;
+  color: rgba(43, 43, 43, 0.6);
+  font-weight: 800;
+  font-size: 30px;
+  font-family: "Unlock", serif;
+  padding: 0px 40px 0 40px;
+}
+.disc-contact p {
+  color: rgb(43, 43, 43);
+  font-weight: 900;
+  font-size: 16px;
+  font-family: "Caveat", cursive;
+}
+.disc-contact button {
+  font-size: 15px;
+  font-family: "Gabriela", serif;
+  padding: 5px 25px 5px 25px;
+  margin-top: 16px;
+  border: 2px rgba(0, 0, 0.5);
+}
+.disc-contact .names {
+  margin-top: 50px;
+}
+.center-line {
+  width: 90%; /* Adjust the width as needed */
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+/* Rating section  */
+.rating {
+  margin: 0 40px 0 40px;
+  height: 700px;
+}
+
+.rating-heading {
+  text-align: center;
+  color: #666666;
+  font-size: 45px;
+  font-family: "Alegreya", serif;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.rating .card {
+  height: 550px;
+  width: 400px;
+  border: 1px solid rgba(102, 102, 102, 0.5);
+  text-align: center;
+  margin-top: 40px;
+  transition: all 0.3s;
+}
+.card .image {
+  background-image: url(./images/5.jpg);
+  width: 100%;
+  height: 260px;
+}
+.card .image2 {
+  background-image: url(./images/6.jpg);
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+}
+.card .image3 {
+  background-image: url(./images/7.jpg);
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+}
+
+.card p {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 25px;
+  font-style: normal;
+  margin-top: 10px;
+}
+.card .card-disc {
+  height: 50%;
+  width: 90%;
+  color: #7c7c7c;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 50px 20px 0px 20px;
+}
+.card:hover {
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.5), -12px -12px 24px white;
+}
+.rating-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 1120px) {
+  .rating-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rating {
+    height: 1900px;
+  }
+}
+
+/* footer section  */
+.footer-panel1 {
+  width: 100%;
+  height: 340px;
+  background-color: black;
+  opacity: 0.85;
+  margin: 0 auto;
+  padding: 60px 0 50px;
+}
+.footer-logo {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+}
+.footer-logo img {
+  background-size: cover;
+  height: 52%;
+  color: white;
+}
+.info {
+  color: #bbbbbb;
+  font-family: "Gabriela", serif;
+  line-height: 2.3;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+}
+.contact-info p {
+  text-align: center;
+}
+.contact-info i {
+  margin-left: 30px;
+}
+.footer-panel2 {
+  height: 110px;
+  background-color: black;
+  opacity: 0.85;
+  color: #bbbbbb;
+  font-family: "Gabriela", serif;
+}
+.footer-panel2 span {
+  color: white;
+  font-size: 12px;
+}
+.footer-panel2 {
+  font-size: 12px;
+}
+.footer-panel2 p {
+  text-align: center;
+  padding: 40px 0;
+}
+.contact-info .info p i:hover {
+  color: #ad056f;
+}
